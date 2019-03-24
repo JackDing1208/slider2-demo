@@ -42,25 +42,37 @@ img {
 img.current {
     transform: translateX(0%);
     z-index: 1;
-    transition: all 1s;
+    transition: all 0.5s;
 }
 
-img.previous{
+img.move-left{
     transform: translateX(-100%);
     z-index: 1;
-    transition: all 1s;
+    transition: all 0.5s;
 }
 
-img.next{
+img.move-right{
     transform: translateX(100%);
+    z-index: 1;
+    transition: all 0.5s;
+}
+
+img.stand-left{
+    left: -100%;
+}
+
+img.stand-right{
+    left: 100%;
 }
 
 
+img.stand{
+    top: 100%;
+}
 svg {
     fill: gray;
     width: 40px;
     height: 40px;
     float: left;
     margin-top: 130px;
-    display: none;
 }
